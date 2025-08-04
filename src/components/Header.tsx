@@ -17,11 +17,19 @@ const Header = () => {
             </div>
           </div>
           
+          <nav className="hidden md:flex space-x-8">
+            <a href="/" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
+              CNG Stations
+            </a>
+            <a href="/fatigue-detection" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
+              Fatigue Detection
+            </a>
+            <a href="#" className="text-sm font-medium text-white hover:text-white/80 transition-colors">
+              About
+            </a>
+          </nav>
+          
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
-              <MapPin className="h-4 w-4 mr-2" />
-              Find Stations
-            </Button>
             <Button variant="ghost" size="sm" className="text-white hover:bg-white/20">
               <User className="h-4 w-4 mr-2" />
               Login
